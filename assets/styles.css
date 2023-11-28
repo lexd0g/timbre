@@ -1,0 +1,50 @@
+@import url('catppuccin.css');
+@font-face {
+    font-family: 'CascadiaCode';
+    src: url(CascadiaCode.woff2);
+}
+
+:root {
+    line-height: 1.4;
+}
+
+body {
+    background-color: var(--ctp-macchiato-crust);
+    color: var(--ctp-macchiato-text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+}
+
+button {
+    padding: 25px 40px;
+	width: 30vh;
+    font-size: 50px;
+    font-family: CascadiaCode, monospace;
+    cursor: pointer;
+    background-color: var(--ctp-macchiato-pink);
+    border: none;
+    border-radius: calc(infinity * 1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Add space between buttons */
+}
+
+button:active {
+    filter: brightness(0.9);
+}
